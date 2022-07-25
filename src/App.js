@@ -9,22 +9,23 @@ function App() {
     setVal(Math.floor(Math.random() * 1642)) 
     return val
   }
+  const quotes = quote[val].text;
+  const author = quote[val].author;
   return (
     <div id='container'>
       <div id = 'quote-box'>
         <div id='text'>
-          <p>{quote[val].text}</p>
-          <p>{val}</p>
+          <p>{quotes}</p>
         </div>
         <div id='author'>
-          <p>-{quote[val].author}</p>
+          <p>-{author}</p>
         </div>
         <div id='new-quote'>
           <button onClick={randomNumber} >New Quote</button>
           
         </div>
-        <div id='tweet-quote'>
-        <a href='https://twitter.com/intent/tweet' ><i class="fa-brands fa-twitter-square"></i></a>
+        <div id='tweet-quote-button' >
+        <a href={"https://twitter.com/intent/tweet?text="+quotes+"  -"+author} id='tweet-quote'> <i className="fa-brands fa-2x fa-twitter-square" ></i> </a>
         </div>
       </div>
     </div>
