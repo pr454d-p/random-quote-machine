@@ -1,0 +1,43 @@
+html,body{
+    margin: 0;
+}
+#container{
+    background-color: rgb(150, 216, 216);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quote-box{
+    background-color: aliceblue;
+    border: 10px solid gray;
+    max-width: 700px;
+    width: 50%;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#text{
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    
+}
+#author{
+    position: absolute;
+    bottom: 85px; 
+    right: 25px;
+}
+#new-quote{
+    position: absolute;
+    bottom: 60px; 
+    right: 25px;
+}
+#tweet-quote{
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+}
